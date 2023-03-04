@@ -1386,7 +1386,7 @@
     (property "Reference" "C1" (at 81.3308 45.8025 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C_Small" (at 81.3308 48.3425 0)
+    (property "Value" "0.1uF" (at 81.3308 48.3425 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 77.978 46.4312 0)

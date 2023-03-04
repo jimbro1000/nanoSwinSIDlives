@@ -28,22 +28,20 @@ repository in the "/bom" folder. This includes
 a positioning reference to make the placing of
 components much easier!
 
-| Item | Qty | Reference(s) | Value | LibPart | Footprint | Datasheet | DNP |
-|------|-----|--------------|-------|---------|----------|-----------|-----|
-| 1 | 1 | C1 | C_Small | Device:C_Small | Capacitor_SMD:C_0805_2012Metric | ~ | | |
-| 2 | 1 | D1 | LED | Device:LED_Small | Diode_SMD:D_0805_2012Metric | ~ |  | |
-| 3 | 1 | host_lower1 | 01-14 | Connector:Conn_01x14_Pin | Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical | ~ |  | |
-| 4 | 1 | host_upper1 | 15-28 | Connector:Conn_01x14_Pin | Connector_PinHeader_2.54mm:PinHeader_1x14_P2.54mm_Vertical | ~ |  | |
-| 5 | 1 | J1 | 6581 | Connector:Conn_01x02_Pin | Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical | ~ |  | |
-| 6 | 1 | J2 | ~ | Connector:Conn_01x02_Pin | Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical | ~ |  | |
-| 7 | 2 | R1, R3 | 1K | Device:R_Small | Resistor_SMD:R_0805_2012Metric | ~ |  | |
-| 8 | 1 | R2 | 240K | Device:R_Small | Resistor_SMD:R_0805_2012Metric | ~ |  | |
-| 9 | 1 | R4 | 2K2 | Device:R_Small | Resistor_SMD:R_0805_2012Metric | ~ |  | |
-| 10 | 1 | R5 | 4K7 | Device:R_Small | Resistor_SMD:R_0805_2012Metric | ~ |  | |
-| 11 | 1 | R6 | 330 | Device:R_Small | Resistor_SMD:R_0805_2012Metric | ~ |  | |
-| 12 | 1 | U1 | ATmega88PA-A | MCU_Microchip_ATmega:ATmega88PA-A | Package_QFP:TQFP-32_7x7mm_P0.8mm | http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48PA_88PA_168PA-Data-Sheet-40002011A.pdf |  | |
-| 13 | 1 | U3 | Program | Connector:Conn_01x06_Pin | Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical | ~ |  | |
-| 14 | 1 | U5 | ASDMB-32MHz | Oscillator:ASDMB-xxxMHz | Oscillator:Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm | ~ |  | |
+| Item | Qty | Reference(s) | Value        | Datasheet |
+|------|-----|--------------|--------------|-----------|
+| 1    | 1   | C1           | 0.1uF        | ~         |
+| 2    | 1   | D1           | LED          | ~         |
+| 3    | 1   | host_lower1  | 01-14        | ~         |
+| 4    | 1   | host_upper1  | 15-28        | ~         |
+| 5    | 2   | R1, R3       | 1K           | ~         |
+| 6    | 1   | R2           | 240K         | ~         |
+| 7    | 1   | R4           | 2K2          | ~         |
+| 8    | 1   | R5           | 4K7          | ~         |
+| 9    | 1   | R6           | 330          | ~         |
+| 10   | 1   | U1           | ATmega88PA-A | http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48PA_88PA_168PA-Data-Sheet-40002011A.pdf |
+| 11   | 1   | U3           | Program      | ~         |
+| 12   | 1   | U5           | ASDMB-32MHz  | ~         |
 
 Note. R6 and D1 are optional and only needed
 to provide the "underglow" when powered up
@@ -55,7 +53,8 @@ the headers are surface mount. How you go about
 soldering these components to the board is up 
 your preference.
 
-It is substantially easier to mount the components and then mount the header pins.
+It is substantially easier to mount the components 
+and then mount the header pins.
 
 A solder paste stencil for such a small board
 is a minor addition to the price when
@@ -64,7 +63,7 @@ assembly pretty simple.
 
 Pay attention to the reference pins for the
 oscillator and the AtMega88. Pin 1 of the
-AtMega88 is to the bottom right (marked with a
+AtMega88 is to the top right (marked with a
 single dot). The oscillator pin 1 is to the
 bottom left (again marked with a single dot).
 
@@ -76,6 +75,13 @@ all socketed). Using the regular square pins
 will damage the socket by spreading the individual
 pin sockets permanently and making a switch 
 back to an original SID much more difficult.
+
+The board has a pre-bridged jumper position to
+select either a 6581 or 8580. By default it is
+set to 6581. If the board is being prepared for
+an 8580 then the bridge must be cut between
+pin 1 and pin 2; and a solder bridge added
+from pin 2 to pin 3.
 
 ## Programming ##
 
@@ -95,17 +101,8 @@ provided for those that want a degree more
 realism to the emulation.
 
 If you want the raw source code for the original
-firmware you can find it at https://github.com/dmantione/swinsid
-
-## Configuration ##
-
-The board has two jumpers on it:
-
-__J1__ should be bridged for MOS _6581_ emulation or
-left open for MOS _8580_.
-
-__J2__ should be left open for MOS _8580_ emulation or
-bridged for _6581_ emulation (the opposite of J1).
+firmware you can find it at 
+https://github.com/dmantione/swinsid
 
 ## Thank you ##
 
