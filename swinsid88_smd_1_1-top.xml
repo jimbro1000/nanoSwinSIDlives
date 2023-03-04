@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>C:\Users\Julian\Documents\KiCad\7.0\projects\NanoSwinSID\swinsid88_smd_1_1-top.kicad_sch</source>
-    <date>03/03/2023 12:59:12</date>
+    <source>C:\Users\jimbr\Documents\KiCad\7.0\projects\nanoSwinSIDlives\swinsid88_smd_1_1-top.kicad_sch</source>
+    <date>04/03/2023 14:44:24</date>
     <tool>Eeschema (7.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -25,7 +25,7 @@
   </design>
   <components>
     <comp ref="C1">
-      <value>C_Small</value>
+      <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <property name="Sheetname" value=""/>
@@ -69,26 +69,15 @@
       <tstamps>73d4b629-3a96-46ed-be38-937e5e93644e</tstamps>
     </comp>
     <comp ref="J1">
-      <value>6581</value>
-      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
-      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
+      <value>6581/8580</value>
+      <footprint>Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
       <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>f2a118d6-da7c-4d48-a5da-9990fe4a4309</tstamps>
-    </comp>
-    <comp ref="J2">
-      <value>~</value>
-      <footprint>Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical</footprint>
-      <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
-      <property name="ki_keywords" value="connector"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>9765b818-f6d9-4f09-ac64-f6c3cff7288d</tstamps>
+      <tstamps>12afce45-0025-447a-9090-4674f8b29888</tstamps>
     </comp>
     <comp ref="R1">
       <value>1K</value>
@@ -193,20 +182,21 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="Connector" part="Conn_01x02_Pin">
-      <description>Generic connector, single row, 01x02, script generated</description>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x02_Pin</field>
+        <field name="Value">Conn_01x03_Pin</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
         <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="Conn_01x06_Pin">
@@ -478,7 +468,6 @@
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
-      <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U1" pin="21" pinfunction="GND" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
       <node ref="U1" pin="5" pinfunction="GND" pintype="passive"/>
@@ -498,8 +487,8 @@
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
     </net>
-    <net code="24" name="Net-(J2-Pin_1)">
-      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    <net code="24" name="Net-(J1-Pin_3)">
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
     </net>
     <net code="25" name="Net-(R1-Pad1)">
