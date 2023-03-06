@@ -28,22 +28,22 @@ repository in the "/bom" folder. This includes
 a positioning reference to make the placing of
 components much easier!
 
-| Item | Qty | Reference(s) | Value        | Datasheet |
-|------|-----|--------------|--------------|-----------|
-| 1    | 1   | C1           | 0.1uF        | ~         |
-| 2    | 1   | D1           | LED          | ~         |
-| 3    | 1   | host_lower1  | 01-14        | ~         |
-| 4    | 1   | host_upper1  | 15-28        | ~         |
-| 5    | 2   | R1, R3       | 1K           | ~         |
-| 6    | 1   | R2           | 240K         | ~         |
-| 7    | 1   | R4           | 2K2          | ~         |
-| 8    | 1   | R5           | 4K7          | ~         |
-| 9    | 1   | R6           | 330          | ~         |
-| 10   | 1   | U1           | ATmega88PA-A | http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48PA_88PA_168PA-Data-Sheet-40002011A.pdf |
-| 11   | 1   | U3           | Program      | ~         |
-| 12   | 1   | U5           | ASDMB-32MHz  | ~         |
+| Item | Qty | Reference(s) | Value            | Datasheet |
+|-----:|:---:|:-------------|:-----------------|:----------|
+| 1    | 1   | C1           | 0.1uF            | ~         |
+| 2    | 1   | D1           | LED              | ~         |
+| 3    | 1   | host_lower1  | 01-14            | ~         |
+| 4    | 1   | host_upper1  | 15-28            | ~         |
+| 5    | 2   | R1, R3       | 1K               | ~         |
+| 6    | 1   | R2           | 240K             | ~         |
+| 7    | 1   | R4           | 2K2              | ~         |
+| 8    | 1   | R5           | 4K7              | ~         |
+| 9    | 1   | R6           | 330R             | ~         |
+| 10   | 1   | U1           | ATmega88PA-AU    | http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48PA_88PA_168PA-Data-Sheet-40002011A.pdf |
+| 11   | 1   | U3           | Program          | ~         |
+| 12   | 1   | U5           | CB3-3C-32M000000 | https://www.ctscorp.com/wp-content/uploads/2015/11/008-0256-0.pdf |
 
-Note. R6 and D1 are optional and only needed
+Note: R6 and D1 are optional and only needed
 to provide the "underglow" when powered up
 
 ## Assembly ##
