@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>C:\Users\jimbr\Documents\KiCad\7.0\projects\nanoSwinSIDlives\swinsid88_smd_1_1-top.kicad_sch</source>
-    <date>04/03/2023 14:44:24</date>
+    <date>06/03/2023 18:24:38</date>
     <tool>Eeschema (7.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -27,7 +27,12 @@
     <comp ref="C1">
       <value>0.1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21B104KBCNNN_Spec.pdf</datasheet>
+      <fields>
+        <field name="Digikey">1276-1003-1-ND</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="Digikey" value="1276-1003-1-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor, small symbol"/>
@@ -38,7 +43,12 @@
     <comp ref="D1">
       <value>LED</value>
       <footprint>Diode_SMD:D_0805_2012Metric</footprint>
+      <datasheet>https://www.we-online.com/katalog/datasheet/150080YS75000.pdf</datasheet>
+      <fields>
+        <field name="Digikey">732-4987-1-ND</field>
+      </fields>
       <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <property name="Digikey" value="732-4987-1-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Light emitting diode, small symbol"/>
@@ -82,7 +92,12 @@
     <comp ref="R1">
       <value>1K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-RNCP.pdf</datasheet>
+      <fields>
+        <field name="Digikey">RNCP0805FTD1K00CT-ND</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Digikey" value="RNCP0805FTD1K00CT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -93,7 +108,12 @@
     <comp ref="R2">
       <value>240K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
+      <fields>
+        <field name="Digikey">RMCF0805FT240KCT-ND</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Digikey" value="RMCF0805FT240KCT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -104,7 +124,12 @@
     <comp ref="R3">
       <value>1K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-RNCP.pdf</datasheet>
+      <fields>
+        <field name="Digikey">RNCP0805FTD1K00CT-ND</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Digikey" value="RNCP0805FTD1K00CT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -115,7 +140,12 @@
     <comp ref="R4">
       <value>2K2</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
+      <fields>
+        <field name="Digikey">RMCF0805FT2K20CT-ND</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Digikey" value="RMCF0805FT2K20CT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -126,7 +156,12 @@
     <comp ref="R5">
       <value>4K7</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
+      <fields>
+        <field name="Digikey">RMCF0805FT4K70CT-ND</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Digikey" value="RMCF0805FT4K70CT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -137,7 +172,12 @@
     <comp ref="R6">
       <value>330</value>
       <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf</datasheet>
+      <fields>
+        <field name="Digikey">RMCF0805FT330RCT-ND</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="Digikey" value="RMCF0805FT330RCT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -146,10 +186,14 @@
       <tstamps>8585589e-064c-446b-96e0-c3bda9a6de09</tstamps>
     </comp>
     <comp ref="U1">
-      <value>ATmega88PA-A</value>
+      <value>ATmega88PA-AU</value>
       <footprint>Package_QFP:TQFP-32_7x7mm_P0.8mm</footprint>
-      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48PA_88PA_168PA-Data-Sheet-40002011A.pdf</datasheet>
+      <datasheet>https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf</datasheet>
+      <fields>
+        <field name="Digikey">ATMEGA88PA-AU-ND</field>
+      </fields>
       <libsource lib="MCU_Microchip_ATmega" part="ATmega88PA-A" description="20MHz, 8kB Flash, 1kB SRAM, 512B EEPROM, TQFP-32"/>
+      <property name="Digikey" value="ATMEGA88PA-AU-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="20MHz, 8kB Flash, 1kB SRAM, 512B EEPROM, TQFP-32"/>
@@ -169,10 +213,14 @@
       <tstamps>ef758899-69bf-47a2-9921-9796d16b45ec</tstamps>
     </comp>
     <comp ref="U5">
-      <value>ASDMB-32MHz</value>
+      <value>CB3-3C-32M000000</value>
       <footprint>Oscillator:Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm</footprint>
-      <datasheet>https://abracon.com/Oscillators/ASDMB.pdf</datasheet>
+      <datasheet>https://www.ctscorp.com/wp-content/uploads/2015/11/008-0256-0.pdf</datasheet>
+      <fields>
+        <field name="Digikey">110-CB3-3C-32M000000CT-ND</field>
+      </fields>
       <libsource lib="Oscillator" part="ASDMB-xxxMHz" description="1.8-3.3V SMD Ultra Miniature Crystal Clock Oscillator, Abracon"/>
+      <property name="Digikey" value="110-CB3-3C-32M000000CT-ND"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="swinsid88_smd_1_1-top.kicad_sch"/>
       <property name="ki_description" value="1.8-3.3V SMD Ultra Miniature Crystal Clock Oscillator, Abracon"/>
